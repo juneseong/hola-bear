@@ -6,18 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hola Bear</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./dist/main.css" />
     <link rel="stylesheet" type="text/css" href="./dist/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./dist/main.css" />
     <script type="application/javascript" src="./dist/main.js" defer></script>
+    <script src="./lib/population.js" charset="utf-8"></script>
+    <script src="./lib/trend.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Quicksand:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Source+Serif+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <nav class="top-nav">
+        <div class="logo"><h1 class="logo-h">Hola Bear</h1></div>
+    </nav>
+    <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    <nav class="side-menu"></nav>
     <div class="main-container">
         <div class="header-container">
             <div class="left-header-container">
             </div>
             <div class="right-header-container">
-            </idv>
+                <div class="right-header-text">
+                    <h2>Polar Bear</h2>
+                    <h2 class="description">Global Warming and Climate Change</h2>
+                    <div class="line"></div>
+                    <p>
+                        Polar bears are threatend by melting sea ice caused by global warming and climate change.
+                        Sea ice is an important resource for them to eat, hunt, find mates, and teach their cubs how to live.
+                        Lack of this essential sea ice leads to their <font class="large-font">population decrease</font> in numerous areas.
+                        Let's find out more.
+                    </p>
+                </div>
+                <div class="main-down-arrow">
+                    <i class="fas fa-sort-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="chart-container">
+            <div class="chart-header">
+                <h3>Canada Polar Bear Population</h3>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborist.</p>
+            </div>
+            <div class="chart">
+                <div id="population"></div>
+            </div>
+            <div class="pie-chart-container">
+                <div class="pie-chart">
+                    <div class="pie-left">
+                        <div id="trend"></div>
+                    </div>
+                    <div class="pie-right-container">
+                        <div class="pie-right">
+                            <h3>Trends in Polar Bear Subpopulations</h3>
+                            <div class="line"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborist.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fun-facts-container">
+                <div class="fun-facts-header"></div>
+                <div class="fun-facts">
+                </div>
+            </div>
         </div>
     </div>
 </body>

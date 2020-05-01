@@ -1,0 +1,325 @@
+body {
+    background-color: #fafafa;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 38px;
+    color: #363636;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    color: #363636;
+    font-weight: 500;
+    display: inline-block;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    line-height: 39px;
+    color: #363636;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #363636;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+
+text {
+    font-family: 'Roboto', sans-serif;
+    color: #363636;
+}
+
+hr {
+    width: 80%;
+    border: 0px solid #ededed;
+    margin: 15px auto 0 auto;
+}
+
+.inactive {
+    opacity: 0;
+    transition: opacity 350ms ease-in-out;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    display: block;
+}
+
+.line {
+    height: 4px;
+    width: 60px;
+    background-color: #70c1b3;
+    margin: 14px 0 17px 0;
+}
+
+.main-container {
+    width: 100%;
+}
+
+.top-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    transition: background-color 350ms ease-in-out;
+}
+
+.transparent-top-nav {
+    background-color: transparent;
+    transition: background-color 350ms ease-in-out;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 25px 0;
+    z-index: 100;
+}
+
+.menu-btn i {   
+    font-size: 30px;
+    margin-right: 40px;
+    line-height: 45px;
+    cursor: pointer;
+    color: #363636;
+    transition: color 0.5s ease-in-out;
+}
+
+.menu-btn i.fa-times {
+    color: #fff;
+}
+
+.logo {
+    padding-left: 40px;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+.logo-h {
+    transition: opacity 350ms ease-in-out;
+}
+
+.side-menu {
+    color: #fff;
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: width 550ms ease-in-out;
+}
+
+.expand {
+    width: 360px;
+}
+
+.navigator {
+    bottom: 40px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.navigator-i {
+    margin: 0 auto;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigator i {
+    color: #363636;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+}
+
+.left-header-container {
+    background: url("https://hola-bear.s3.amazonaws.com/main-img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 700px auto;
+    background-position: bottom -70px left 0;
+    width: 48%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.right-header-container {
+    padding: 20% 120px 0 120px;
+    width: 52%;
+    box-sizing: border-box;
+}
+
+.right-header-text {
+    width: 100%;
+    margin: 0 -10px 0 10px;
+    opacity: 0;
+}
+
+.right-header-text.active {
+    margin: 0;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.main-down-arrow {
+    width: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 180px;
+}
+
+.main-down-arrow i {
+    font-size: 34px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.main-down-arrow i:hover {
+    color: #70c1b3;
+    transition: color 0.2s ease-in-out;
+}
+
+.chart-container {
+    background-color: #fff;
+    width: 100%;
+}
+
+.chart-header {
+    width: 50%;
+    text-align: center;
+    padding: 80px 0 20px 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.chart-container .line {
+    margin: 15px auto 17px auto;
+    background-color: #70c1b3;
+}
+
+.chart {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+#population {
+    height: 525px;
+    width: 100%;
+}
+
+.pie-chart-container {
+    background-color: #fafafa;
+}
+
+.pie-chart {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.pie-chart .line {
+    background-color: #70c1b3;
+    margin: 16px 0;
+}
+
+.pie-left {
+    padding: 25px;
+    width: 55%;
+}
+
+#trend {
+    width: 525px;
+    height: 525px;
+    margin: auto;
+}
+
+.pie-right-container {
+    width: 45%;
+    height: 100%;
+    margin: auto;
+    padding: 25px;
+    padding-left: 15px;
+}
+
+.pie-right {
+    padding: 20px;
+    margin-left: 10px;
+    opacity: 0;
+}
+
+.pie-right.active {
+    opacity: 1;
+    margin: 0;
+    transition: all 1.5s ease-in-out;
+}
+
+.fun-facts-header {
+    height: 350px;
+    width: 100%;
+    background: url("https://hola-bear.s3.amazonaws.com/img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+}
+
+.fun-facts {
+    margin: 0 auto;
+    width: 60%;
+    height: 600px;
+}
+
+.population-chart text {
+    font-size: 12px;
+}
+
+.pie-chart text {
+    font-size: 15px;
+}
+
+.pie-chart-tooltip {
+    position: absolute;
+    opacity: 0;
+    background-color: #fff;
+    padding: 6px 10px;
+    border-radius: 2px;
+    width: 200px;
+    font-size: 12px;
+    box-shadow: 2px 2px 18px -2px rgba(0, 0, 0, 0.1);
+    line-height: 16px;
+    cursor: default;
+}
+
+#trend path, #trend text {
+    cursor: default;
+}
