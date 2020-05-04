@@ -91,7 +91,7 @@ hr {
     top: 0;
     right: 0;
     padding: 25px 0;
-    z-index: 100;
+    z-index: 300;
 }
 
 .menu-btn i {   
@@ -129,6 +129,7 @@ hr {
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.85);
     transition: width 550ms ease-in-out;
+    z-index: 200;
 }
 
 .expand {
@@ -179,14 +180,14 @@ hr {
 
 .right-header-text {
     width: 100%;
-    margin: 0 -10px 0 10px;
+    margin: 0 -5px 0 5px;
     opacity: 0;
 }
 
 .right-header-text.active {
     margin: 0;
     opacity: 1;
-    transition: all 1s ease-in-out;
+    transition: all 0.75s ease-in-out;
 }
 
 .main-down-arrow {
@@ -226,15 +227,20 @@ hr {
 }
 
 .chart {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 90px;
 }
 
 #population {
-    height: 525px;
-    width: 100%;
+    height: 550px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.population-chart text.label {
+    font-size: 14px;
 }
 
 .pie-chart-container {
@@ -267,7 +273,7 @@ hr {
     width: 45%;
     height: 100%;
     margin: auto;
-    padding: 25px;
+    padding: 50px;
     padding-left: 15px;
 }
 
@@ -284,13 +290,35 @@ hr {
 }
 
 .fun-facts-header {
-    height: 350px;
+    height: 100vh;
     width: 100%;
     background: url("https://hola-bear.s3.amazonaws.com/img.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
     background-position: center;
+    position: relative;
+}
+
+.temp-footer {
+    background-color: rgba(0, 0, 0, .85);
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-info {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info p {
+    color: #fff;
+    padding-top: 30px;
+    font-size: 14px;
 }
 
 .fun-facts {
@@ -303,8 +331,25 @@ hr {
     font-size: 12px;
 }
 
+.population-chart .grid {
+    color:#ddd;
+}
+
+.bar-chart-tooltip {
+    position: absolute;
+    opacity: 0;
+    background-color: #fff;
+    padding: 6px 10px;
+    border-radius: 2px;
+    width: 60px;
+    font-size: 12px;
+    box-shadow: 2px 2px 18px -2px rgba(0, 0, 0, 0.2);
+    line-height: 16px;
+    cursor: default;
+}
+
 .pie-chart text {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .pie-chart-tooltip {
@@ -322,6 +367,11 @@ hr {
 
 #trend path, #trend text {
     cursor: default;
+}
+
+p.pie-chart-source {
+    font-size: 12px;
+    margin-top: 20px;
 }
 
 /*# sourceMappingURL=main.css.map*/
