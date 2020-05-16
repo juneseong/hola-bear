@@ -1,38 +1,37 @@
-body {
-    background-color: #fafafa;
-}
-
 h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 38px;
-    color: #363636;
-    font-weight: 700;
+    font-size: 42px;
+    color: #fff;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
 }
 
 h2 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 32px;
+    font-size: 22px;
     line-height: 48px;
-    color: #363636;
-    font-weight: 500;
-    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 }
 
 h3 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 26px;
+    font-size: 28px;
     line-height: 39px;
     color: #363636;
     font-weight: 500;
+    -webkit-font-smoothing: antialiased;
 }
 
 p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 25px;
     font-weight: 400;
     color: #363636;
     font-family: 'Roboto', sans-serif;
     display: inline-block;
+    -webkit-font-smoothing: antialiased;
 }
 
 text {
@@ -41,337 +40,267 @@ text {
 }
 
 hr {
-    width: 80%;
-    border: 0px solid #ededed;
-    margin: 15px auto 0 auto;
+    width: 120px;
+    border: 1.5px solid #fff;
+    margin: 25px auto;
 }
 
-.inactive {
-    opacity: 0;
-    transition: opacity 350ms ease-in-out;
-}
-
-.description {
-    font-size: 20px;
+button {
+    width: 195px;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    margin: 20px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    transition: all 350ms ease-in-out;
+    font-size: 14px;
     line-height: 30px;
-    font-weight: 500;
-    display: block;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.line {
-    height: 4px;
-    width: 60px;
-    background-color: #70c1b3;
-    margin: 14px 0 17px 0;
+button:hover {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #666;
+    transition: all 350ms ease-in-out;
 }
 
 .main-container {
     width: 100%;
 }
 
-.top-nav {
+.container {
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 25px 0;
-    display: flex;
-    justify-content: space-between;
     background-color: #fff;
-    transition: background-color 350ms ease-in-out;
-}
-
-.transparent-top-nav {
-    background-color: transparent;
-    transition: background-color 350ms ease-in-out;
-}
-
-.menu-btn {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 25px 0;
-    z-index: 300;
-}
-
-.menu-btn i {   
-    font-size: 30px;
-    margin-right: 40px;
-    line-height: 45px;
-    cursor: pointer;
-    color: #363636;
-    transition: color 0.5s ease-in-out;
-}
-
-.menu-btn i.fa-times {
-    color: #fff;
-}
-
-.logo {
-    padding-left: 40px;
-    cursor: pointer;
-    line-height: 50px;
-}
-
-.logo-h {
-    transition: opacity 350ms ease-in-out;
-}
-
-.side-menu {
-    color: #fff;
-    width: 0;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.85);
-    transition: width 550ms ease-in-out;
-    z-index: 200;
-}
-
-.expand {
-    width: 360px;
-}
-
-.navigator {
-    bottom: 40px;
-    position: fixed;
-    width: 100%;
     text-align: center;
 }
 
-.navigator-i {
+.first-container {
+    width: 60%;
     margin: 0 auto;
-    width: 120px;
-    display: flex;
-    justify-content: space-between;
+    padding: 100px 0;
 }
 
-.navigator i {
-    color: #363636;
-    font-size: 13px;
-    cursor: pointer;
+.first-container hr {
+    border: 1.5px solid #70c1b3;
+}
+
+.logo {
+    line-height: 50px;
 }
 
 .header-container {
     width: 100%;
-    display: flex;
-}
-
-.left-header-container {
-    background: url("https://hola-bear.s3.amazonaws.com/main-img.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 700px auto;
-    background-position: bottom -70px left 0;
-    width: 48%;
     height: 100vh;
     box-sizing: border-box;
+    background: url("https://hola-bear.s3.amazonaws.com/main-img2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.right-header-container {
-    padding: 20% 120px 0 120px;
-    width: 52%;
-    box-sizing: border-box;
-}
-
-.right-header-text {
-    width: 100%;
-    margin: 0 -5px 0 5px;
-    opacity: 0;
-}
-
-.right-header-text.active {
-    margin: 0;
-    opacity: 1;
-    transition: all 0.75s ease-in-out;
-}
-
-.main-down-arrow {
-    width: 50px;
-    text-align: center;
+.header-text {
+    width: 70%;
     margin: 0 auto;
-    padding-top: 180px;
-}
-
-.main-down-arrow i {
-    font-size: 34px;
-    cursor: pointer;
-    transition: color 0.2s ease-in-out;
-}
-
-.main-down-arrow i:hover {
-    color: #70c1b3;
-    transition: color 0.2s ease-in-out;
-}
-
-.chart-container {
-    background-color: #fff;
-    width: 100%;
-}
-
-.chart-header {
-    width: 50%;
+    padding-top: 190px;
     text-align: center;
-    padding: 80px 0 20px 0;
-    margin: 0 auto;
-    box-sizing: border-box;
 }
 
-.chart-container .line {
-    margin: 15px auto 17px auto;
-    background-color: #70c1b3;
-}
-
-.chart {
+.empty {
+    height: 600px;
     width: 100%;
+    background: url("https://hola-bear.s3.amazonaws.com/main-img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.second-container {
+    width: 65%;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 90px;
+    padding: 75px 0;
 }
 
-#population {
-    height: 550px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.population-chart text.label {
-    font-size: 14px;
+.container.second {
+    background-color: #f0f5fb;
 }
 
 .pie-chart-container {
     background-color: #fafafa;
+    padding: 70px 0;
 }
 
 .pie-chart {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
 }
 
-.pie-chart .line {
-    background-color: #70c1b3;
-    margin: 16px 0;
-}
-
-.pie-left {
-    padding: 25px;
-    width: 55%;
+.pie-chart hr {
+    margin: 25px auto;
+    border: 1px solid #a8dadc;
 }
 
 #trend {
-    width: 525px;
-    height: 525px;
+    height: 625px;
+    width: 625px;
     margin: auto;
 }
 
 .pie-right-container {
-    width: 45%;
+    text-align: center;
     height: 100%;
     margin: auto;
-    padding: 50px;
-    padding-left: 15px;
 }
 
 .pie-right {
     padding: 20px;
     margin-left: 10px;
-    opacity: 0;
+    height: 320px;
 }
 
-.pie-right.active {
-    opacity: 1;
-    margin: 0;
-    transition: all 1.5s ease-in-out;
+.pie-percentage {
+    color: #a8dadc;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
-.fun-facts-header {
-    height: 100vh;
-    width: 100%;
-    background: url("https://hola-bear.s3.amazonaws.com/img.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-position: center;
-    position: relative;
+.pie-key {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+    font-size: 22px;
 }
 
-.temp-footer {
-    background-color: rgba(0, 0, 0, .85);
-    height: 80px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+.pie-area {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.footer-info {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+.pie-right h3 {
+    margin: 20px;
 }
 
-.footer-info p {
-    color: #fff;
-    padding-top: 30px;
-    font-size: 14px;
-}
-
-.fun-facts {
-    margin: 0 auto;
-    width: 60%;
-    height: 600px;
-}
-
-.population-chart text {
-    font-size: 12px;
-}
-
-.population-chart .grid {
-    color:#ddd;
-}
-
-.bar-chart-tooltip {
-    position: absolute;
-    opacity: 0;
-    background-color: #fff;
-    padding: 6px 10px;
-    border-radius: 2px;
-    width: 60px;
-    font-size: 12px;
-    box-shadow: 2px 2px 18px -2px rgba(0, 0, 0, 0.2);
-    line-height: 16px;
-    cursor: default;
+.pie-description {
+    padding: 15px;
 }
 
 .pie-chart text {
-    font-size: 14px;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
 }
 
 .pie-chart-tooltip {
     position: absolute;
     opacity: 0;
     background-color: #fff;
-    padding: 6px 10px;
+    padding: 12px;
     border-radius: 2px;
     width: 200px;
-    font-size: 12px;
+    font-size: 16px;
     box-shadow: 2px 2px 18px -2px rgba(0, 0, 0, 0.1);
     line-height: 16px;
-    cursor: default;
+    cursor: crosshair;
 }
 
 #trend path, #trend text {
-    cursor: default;
+    cursor: crosshair;
 }
 
 p.pie-chart-source {
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 20px;
+}
+
+.fun-facts-container img {
+     width: 450px;
+     margin-left: -60px;
+}
+
+.fun-facts-header {
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background: url("https://hola-bear.s3.amazonaws.com/main-img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.fun-facts-header h2 {
+    text-align: center;
+    padding-top: 180px;
+    font-size: 36px;
+}
+
+.fun-facts {
+    margin: 0 auto;
+    width: 60%;
+    padding: 70px 0;
+    position: relative;
+}
+
+.fun-facts h3 {
+    margin-top: 75px;
+    margin-bottom: 15px;
+}
+
+.fact {
+    margin: 45px 0;
+}
+
+.fact-num {
+    color: #a8dadc;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 38px;
+    margin-right: 20px;
+}
+
+.fact-content {
+    font-family: 'Roboto', sans-serif;
+    color: #363636;
+    font-size: 22px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.footer-container {
+    width: 100%;
+    bottom: 50px;
+    left: 0;
+    background: url("https://hola-bear.s3.amazonaws.com/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    width: 60%;
+    margin: 0 auto;
+    height: 525px;
+    position: relative;
+}
+
+.footer-info {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+.footer-info p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+}
+
+.footer-info i {
+    padding-right: 10px;
 }
 
 /*# sourceMappingURL=main.css.map*/
