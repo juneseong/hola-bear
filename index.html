@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="./dist/reset.css" />
     <link rel="stylesheet" type="text/css" href="./dist/main.css" />
     <script type="application/javascript" src="./dist/main.js" defer></script>
-    <script src="./lib/population.js" charset="utf-8"></script>
     <script src="./lib/trend.js" charset="utf-8"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -18,71 +17,77 @@
 </head>
 
 <body>
-    <nav class="top-nav">
-        <div class="logo"><h1 class="logo-h">Hola Bear</h1></div>
-    </nav>
-    <div class="menu-btn"><i class="fas fa-bars"></i></div>
-    <nav class="side-menu"></nav>
     <div class="main-container">
         <div class="header-container">
-            <div class="left-header-container">
-            </div>
-            <div class="right-header-container">
-                <div class="right-header-text">
-                    <h2>Polar Bear</h2>
-                    <h2 class="description">Global Warming and Climate Change</h2>
-                    <div class="line"></div>
-                    <p>
-                        Polar bears are threatend by melting sea ice caused by global warming and climate change.
-                        Sea ice is an important resource for them to eat, hunt, find mates, and teach their cubs how to live.
-                        Lack of this essential sea ice leads to their <font class="large-font">population decrease</font> in numerous areas.
-                        Let's find out more.
-                    </p>
+            <div class="header-text">
+                <div class="logo">
+                    <h1>Hola Bear</h1>
                 </div>
-                <div class="main-down-arrow">
-                    <i class="fas fa-sort-down"></i>
+                <hr>
+                <h2 class="description">Impact of Climate Change on Polar Bears</h2>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="first-container">
+                <h3>Melting Sea Ice</h3>
+                <hr>
+                <p>Polar bears are threatend by melting sea ice caused by global warming and climate change.
+                Sea ice is an important resource for them to eat, hunt, find mates, and teach their cubs how to live.
+                </p>
+            </div>
+        </div>
+        <div class="empty">
+        </div>
+        <div class="pie-chart-container">
+            <div class="pie-chart">
+                <div class="pie-right-container">
+                    <div class="pie-right">
+                        <h3>Trends in Polar Bear Subpopulations</h3>
+                        <div class="pie-description">
+                            <div class="test"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie-left">
+                    <div id="trend"></div>
                 </div>
             </div>
         </div>
-        <div class="chart-container">
-            <div class="chart-header">
-                <h3>Canada Polar Bear Population</h3>
-                <div class="line"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborist.</p>
+        <div class="fun-facts-container">
+            <div class="fun-facts-header">
+                <h2>Fun Facts</h2>
             </div>
-            <div class="chart">
-                <div id="population"></div>
-            </div>
-            <div class="pie-chart-container">
-                <div class="pie-chart">
-                    <div class="pie-left">
-                        <div id="trend"></div>
-                    </div>
-                    <div class="pie-right-container">
-                        <div class="pie-right">
-                            <h3>Trends in Polar Bear Subpopulations</h3>
-                            <div class="line"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborist.
-                            </p>
-                            <p class="pie-chart-source">
-                                Source: WWF
-                            </p>
-                        </div>
-                    </div>
+            <div class="fun-facts">
+                <div class="fact">
+                    <span class="fact-num">01</span><span class="fact-content">Polar bears are actually black, not white.</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-num">02</span><span class="fact-content">They can swim constantly for days at a time.</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-num">03</span><span class="fact-content">Less than 2% of polar bear hunts are successful.</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-num">04</span><span class="fact-content">Male polar bears can weight as much as 10 men.</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-num">05</span><span class="fact-content">Female polar bears usually only weigh about half as much as males.</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-num">06</span><span class="fact-content">They can smell their prey up to a kilometer away.</span>
                 </div>
             </div>
-            <div class="fun-facts-container">
-                <div class="fun-facts-header">
-                    <div class="temp-footer">
-                        <div class="footer-info">
-                            <p>June © 2020</p>
-                            <a href="http://www.juneseong.com" target="_blank"><p>Porfolio</p></a>
-                            <a href="https://github.com/juneseong/hola-bear" target="_blank"><p>Github</p></a>
-                            <a href="https://www.linkedin.com/in/juneseong" target="_blank"><p>LinkedIn</p></a>
-                        </div>
-                    </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-info">
+                    <a href="https://github.com/juneseong/hola-bear" target="_blank">
+                        <p><i class="fab fa-github"></i></p></a>
+                    <a href="https://www.linkedin.com/in/juneseong" target="_blank">
+                        <p><i class="fab fa-linkedin"></i></p></a>
+                    <a href="https://angel.co/u/june-seong" target="_blank">
+                        <p><i class="fab fa-angellist"></i></p></a>
                 </div>
             </div>
         </div>
