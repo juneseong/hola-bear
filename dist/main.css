@@ -1,9 +1,11 @@
 h1 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 42px;
+    margin-bottom: 13px;
     color: #fff;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -34,6 +36,10 @@ p {
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+    text-decoration: none;
+}
+
 text {
     font-family: 'Roboto', sans-serif;
     color: #363636;
@@ -42,7 +48,7 @@ text {
 hr {
     width: 120px;
     border: 1.5px solid #fff;
-    margin: 25px auto;
+    margin: 5px auto;
 }
 
 button {
@@ -74,7 +80,7 @@ button:hover {
     width: 100%;
 }
 
-.container {
+#main {
     width: 100%;
     background-color: #fff;
     text-align: center;
@@ -88,6 +94,7 @@ button:hover {
 
 .first-container hr {
     border: 1.5px solid #70c1b3;
+    margin: 25px auto;
 }
 
 .logo {
@@ -239,6 +246,7 @@ p.pie-chart-source {
     text-align: center;
     padding-top: 180px;
     font-size: 36px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .fun-facts {
@@ -247,7 +255,6 @@ p.pie-chart-source {
     padding: 70px 0;
     position: relative;
 }
-
 .fun-facts h3 {
     margin-top: 75px;
     margin-bottom: 15px;
@@ -278,29 +285,36 @@ p.pie-chart-source {
     background: url("https://hola-bear.s3.amazonaws.com/img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 .footer {
-    width: 60%;
-    margin: 0 auto;
-    height: 525px;
-    position: relative;
+    background-color: #f7f9fa;
+    text-align: center;
+    padding: 50px 0;
 }
 
 .footer-info {
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-}
-
-.footer-info p {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 24px;
+    margin: 0 auto;
 }
 
 .footer-info i {
+    text-align: center;
+    font-size: 26px;
+    width: 26px;
     padding-right: 10px;
+    padding: 28px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.footer-info i:hover {
+    color: #70c1b3;
+    border: 1px solid #70c1b3;
+    transition: all 250ms ease-in-out;
 }
 
 /*# sourceMappingURL=main.css.map*/
