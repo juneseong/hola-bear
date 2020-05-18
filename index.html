@@ -5,6 +5,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hola Bear</title>
+    <meta property="og:title" content="Hola Bear" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://juneseong.github.io/hola-bear" />
+    <meta property="og:image" content="src/images/hola-bear.png" />
+    <meta property="og:description"
+        content="Hola Bear is a data visualization webpage that presents polar bear population based on the impact of climate change" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./dist/reset.css" />
     <link rel="stylesheet" type="text/css" href="./dist/main.css" />
@@ -25,10 +31,10 @@
                 </div>
                 <hr>
                 <h2 class="description">Impact of Climate Change on Polar Bears</h2>
-                <button>Learn More</button>
+                <a href="#main"><button>Learn More</button></a>
             </div>
         </div>
-        <div class="container">
+        <div id="main">
             <div class="first-container">
                 <h3>Melting Sea Ice</h3>
                 <hr>
@@ -82,12 +88,18 @@
         <div class="footer-container">
             <div class="footer">
                 <div class="footer-info">
+                    <a href="https://juneseong.com" target="_blank">
+                        <p><i class="fas fa-external-link-square-alt"></i></p>
+                    </a>
                     <a href="https://github.com/juneseong/hola-bear" target="_blank">
-                        <p><i class="fab fa-github"></i></p></a>
+                        <p><i class="fab fa-github"></i></p>
+                    </a>
                     <a href="https://www.linkedin.com/in/juneseong" target="_blank">
-                        <p><i class="fab fa-linkedin"></i></p></a>
+                        <p><i class="fab fa-linkedin-in"></i></p>
+                    </a>
                     <a href="https://angel.co/u/june-seong" target="_blank">
-                        <p><i class="fab fa-angellist"></i></p></a>
+                        <p><i class="fab fa-angellist"></i></p>
+                    </a>
                 </div>
             </div>
         </div>
