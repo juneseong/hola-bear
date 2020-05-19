@@ -1,7 +1,6 @@
 h1 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 42px;
-    margin-bottom: 13px;
     color: #fff;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
@@ -19,16 +18,16 @@ h2 {
 
 h3 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 39px;
-    color: #363636;
+    color: #6096ba;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
 }
 
 p {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
     font-weight: 400;
     color: #363636;
     font-family: 'Roboto', sans-serif;
@@ -47,23 +46,23 @@ text {
 
 hr {
     width: 120px;
-    border: 1.5px solid #fff;
-    margin: 5px auto;
+    border: 1.5px solid #6096ba;
+    margin: 25px auto;
 }
 
 button {
-    width: 195px;
-    padding: 8px;
+    width: 200px;
+    padding: 10px;
     border: 2px solid #fff;
     border-radius: 30px;
     background-color: transparent;
     color: #fff;
-    margin: 20px;
+    margin: 25px;
     text-transform: uppercase;
     outline: none;
     cursor: pointer;
     transition: all 350ms ease-in-out;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
     font-weight: 400;
     font-family: 'Ubuntu', sans-serif;
@@ -72,7 +71,7 @@ button {
 button:hover {
     border: 2px solid #fff;
     background-color: #fff;
-    color: #666;
+    color: #6096ba;
     transition: all 350ms ease-in-out;
 }
 
@@ -80,21 +79,23 @@ button:hover {
     width: 100%;
 }
 
-#main {
+.main {
     width: 100%;
     background-color: #fff;
     text-align: center;
 }
 
 .first-container {
-    width: 60%;
+    width: 65%;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 100px 0;
+    opacity: 0;
 }
 
-.first-container hr {
-    border: 1.5px solid #70c1b3;
-    margin: 25px auto;
+.first-container.active {
+    opacity: 1;
+    transition: opacity 1.5s linear;
 }
 
 .logo {
@@ -105,16 +106,22 @@ button:hover {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    background: url("https://hola-bear.s3.amazonaws.com/main-img2.jpg");
+    background: url("https://hola-bear.s3.amazonaws.com/main-img7.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    opacity: 0;
+}
+
+.header-container.active {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
 }
 
 .header-text {
     width: 70%;
     margin: 0 auto;
-    padding-top: 190px;
+    padding-top: 220px;
     text-align: center;
 }
 
@@ -145,13 +152,9 @@ button:hover {
 
 .pie-chart {
     width: 80%;
+    max-width: 1250px;
     margin: 0 auto;
     display: flex;
-}
-
-.pie-chart hr {
-    margin: 25px auto;
-    border: 1px solid #a8dadc;
 }
 
 #trend {
@@ -161,27 +164,25 @@ button:hover {
 }
 
 .pie-right-container {
-    text-align: center;
+    max-width: 515px;
     height: 100%;
     margin: auto;
 }
 
 .pie-right {
     padding: 20px;
-    margin-left: 10px;
     height: 320px;
 }
 
 .pie-percentage {
-    color: #a8dadc;
+    color: #a3cef1;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
+    font-size: 38px;
     margin-bottom: 10px;
 }
 
 .pie-key {
     font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 10px;
     font-size: 22px;
 }
 
@@ -192,10 +193,11 @@ button:hover {
 
 .pie-right h3 {
     margin: 20px;
+    margin-top: 0;
 }
 
 .pie-description {
-    padding: 15px;
+    padding: 20px;
 }
 
 .pie-chart text {
@@ -232,29 +234,32 @@ p.pie-chart-source {
 }
 
 .fun-facts-header {
-    height: 400px;
+    height: 360px;
     width: 100%;
     margin: 0 auto;
-    background: url("https://hola-bear.s3.amazonaws.com/main-img2.jpg");
+    background: url("https://hola-bear.s3.amazonaws.com/main-img7.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
+    background-attachment: fixed;
 }
 
 .fun-facts-header h2 {
     text-align: center;
-    padding-top: 180px;
-    font-size: 36px;
+    padding-top: 160px;
+    font-size: 40px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .fun-facts {
     margin: 0 auto;
-    width: 60%;
+    width: 65%;
+    max-width: 1100px;
     padding: 70px 0;
     position: relative;
 }
+
 .fun-facts h3 {
     margin-top: 75px;
     margin-bottom: 15px;
@@ -265,7 +270,7 @@ p.pie-chart-source {
 }
 
 .fact-num {
-    color: #a8dadc;
+    color: #a3cef1;
     font-family: 'Ubuntu', sans-serif;
     font-size: 38px;
     margin-right: 20px;
@@ -276,6 +281,15 @@ p.pie-chart-source {
     color: #363636;
     font-size: 22px;
     -webkit-font-smoothing: antialiased;
+}
+
+.empty2 {
+    width: 100%;
+    height: 80vh;
+    background: url("https://hola-bear.s3.amazonaws.com/main-img8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .footer-container {
@@ -291,11 +305,16 @@ p.pie-chart-source {
 .footer {
     background-color: #f7f9fa;
     text-align: center;
-    padding: 50px 0;
+    height: 20vh;
+    padding: 60px 0;
+    box-sizing: border-box;
 }
 
 .footer-info {
     margin: 0 auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-info i {
@@ -305,15 +324,14 @@ p.pie-chart-source {
     padding-right: 10px;
     padding: 28px;
     border-radius: 50%;
-    border: 1px solid #ddd;
-    margin: 0 10px;
+    border: 1px solid rgba(12,18,28,.12);
     transition: all 250ms ease-in-out;
     cursor: pointer;
 }
 
 .footer-info i:hover {
-    color: #70c1b3;
-    border: 1px solid #70c1b3;
+    color: #a3cef1;
+    border: 1px solid #a3cef1;
     transition: all 250ms ease-in-out;
 }
 
