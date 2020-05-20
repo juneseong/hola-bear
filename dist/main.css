@@ -159,7 +159,7 @@ button:hover {
 .pie-chart-container {
     background-color: #fafafa;
     padding: 70px 0;
-    background: url("/src/images/map.gif");
+    background: url("https://hola-bear.s3.amazonaws.com/map.gif");
     background-repeat: no-repeat;
     background-position: right center;
     background-attachment: fixed;
