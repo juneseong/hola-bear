@@ -1,6 +1,6 @@
 h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 42px;
+    font-size: 40px;
     color: #fff;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
@@ -10,7 +10,7 @@ h1 {
 
 h2 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 22px;
+    font-size: 21px;
     line-height: 48px;
     color: #fff;
     font-weight: 400;
@@ -46,21 +46,20 @@ text {
 }
 
 hr {
-    width: 50px;
+    width: 40px;
     border: 3px solid #fff;
     margin: 16px auto;
     margin-bottom: 8px;
 }
 
 button {
-    width: 200px;
-    padding: 10px;
+    width: 190px;
+    padding: 8px;
     border: 2.5px solid #fff;
     border-radius: 30px;
     background-color: transparent;
     color: #fff;
-    margin: 30px;
-    text-transform: uppercase;
+    margin: 25px;
     outline: none;
     cursor: pointer;
     transition: all 350ms ease-in-out;
@@ -136,7 +135,7 @@ button:hover {
 .header-text {
     width: 70%;
     margin: 0 auto;
-    padding-top: 220px;
+    padding-top: 20vh;
     text-align: center;
 }
 
