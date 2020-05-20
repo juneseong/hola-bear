@@ -89,13 +89,21 @@ button:hover {
     width: 65%;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 100px 0;
+    box-sizing: border-box;
+    height: 35vh;
     opacity: 0;
+    position: relative;
 }
 
 .first-container.active {
     opacity: 1;
     transition: opacity 1.5s linear;
+}
+
+.first {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .logo {
@@ -126,7 +134,7 @@ button:hover {
 }
 
 .empty {
-    height: 600px;
+    height: 65vh;
     width: 100%;
     background: url("https://hola-bear.s3.amazonaws.com/main-img3.jpg");
     background-repeat: no-repeat;
@@ -139,10 +147,6 @@ button:hover {
     margin: 0 auto;
     text-align: center;
     padding: 75px 0;
-}
-
-.container.second {
-    background-color: #f0f5fb;
 }
 
 .pie-chart-container {
@@ -171,7 +175,16 @@ button:hover {
 
 .pie-right {
     padding: 20px;
-    height: 320px;
+    padding-left: 40px;
+    height: 375px;
+    opacity: 0;
+    
+}
+
+.pie-right.shift {
+    padding-left: 20px;
+    opacity: 1;
+    transition: all 1.5s ease-in-out;
 }
 
 .pie-percentage {
@@ -223,9 +236,13 @@ button:hover {
     cursor: crosshair;
 }
 
-p.pie-chart-source {
+.pie-source {
     font-size: 16px;
     margin-top: 20px;
+}
+
+.pie-source-head {
+    font-weight: bold;
 }
 
 .fun-facts-container img {
@@ -285,33 +302,33 @@ p.pie-chart-source {
 
 .empty2 {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background: url("https://hola-bear.s3.amazonaws.com/main-img8.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .footer-container {
     width: 100%;
-    bottom: 50px;
-    left: 0;
     background: url("https://hola-bear.s3.amazonaws.com/img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    text-align: center;
 }
 
 .footer {
-    background-color: #f7f9fa;
-    text-align: center;
-    height: 20vh;
-    padding: 60px 0;
+    bottom: 80px;
     box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .footer-info {
-    margin: 0 auto;
     width: 500px;
     display: flex;
     justify-content: space-between;
@@ -321,16 +338,14 @@ p.pie-chart-source {
     text-align: center;
     font-size: 26px;
     width: 26px;
-    padding-right: 10px;
     padding: 28px;
     border-radius: 50%;
-    border: 1px solid rgba(12,18,28,.12);
     transition: all 250ms ease-in-out;
     cursor: pointer;
+    color: #fff;
 }
 
 .footer-info i:hover {
     color: #a3cef1;
-    border: 1px solid #a3cef1;
     transition: all 250ms ease-in-out;
 }
