@@ -37,9 +37,16 @@ window.onload = function () {
 
 window.addEventListener("scroll", function() {
     const description = document.querySelector(".first-container");
-    const targetPosition = description.getBoundingClientRect().top;
+    const descTargetPosition = description.getBoundingClientRect().top;
+    const pieContent = document.querySelector(".pie-right");
+    const pieContainer = document.querySelector(".pie-chart-container");
+    const pieTargetPosition = window.pageYOffset - pieContainer.getBoundingClientRect().top;
 
-    if (window.pageYOffset > targetPosition) {
+    if (window.pageYOffset > descTargetPosition) {
         description.classList.add("active");
+    }
+
+    if (window.pageYOffset < pieTargetPosition + 500) {
+        pieContent.classList.add("shift");
     }
 });
