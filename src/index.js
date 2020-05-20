@@ -46,7 +46,7 @@ window.addEventListener("scroll", function() {
         description.classList.add("active");
     }
 
-    if (window.pageYOffset < pieTargetPosition + 400) {
+    if (window.pageYOffset < pieTargetPosition + 500) {
         pieContent.classList.add("shift");
     }
 });
