@@ -372,14 +372,15 @@ button:hover {
 .footer-info i {
     text-align: center;
     font-size: 26px;
-    width: 26px;
+    width: 30px;
+    height: 30px;
     padding: 28px 0;
     transition: all 250ms ease-in-out;
     cursor: pointer;
 }
 
 .footer-info i:hover {
-    color: #6096ba;
+    font-size: 29px;
     transition: all 250ms ease-in-out;
 }
 
