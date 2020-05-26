@@ -41,6 +41,9 @@ window.addEventListener("scroll", function() {
     const pieContent = document.querySelector(".pie-right");
     const pieContainer = document.querySelector(".pie-chart-container");
     const pieTargetPosition = window.pageYOffset - pieContainer.getBoundingClientRect().top;
+    const funContent = document.querySelector(".fun-facts");
+    const funContainer = document.querySelector(".fun-facts");
+    const funTargetPosition = window.pageYOffset - funContainer.getBoundingClientRect().top;
 
     if (window.pageYOffset > descTargetPosition) {
         description.classList.add("active");
@@ -48,5 +51,9 @@ window.addEventListener("scroll", function() {
 
     if (window.pageYOffset < pieTargetPosition + 500) {
         pieContent.classList.add("shift");
+    }
+
+    if (window.scrollY - 700 < funTargetPosition) {
+        funContent.classList.add("shift");
     }
 });
