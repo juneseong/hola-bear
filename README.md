@@ -16,6 +16,6 @@ Hola Bear is mainly built with `Vanilla JavaScript`, `HTML5` and `CSS3`. `D3.js`
 Users can view data on trends in polar bear subpopulation by hovering their mouse over any of the pie in the chart. `D3.js` was utilized to parse dataset to provide visually appealing information and through event handlers, enhance overall user experience.
 
 ### 2. Responsive
-![hb-giphy2](https://user-images.githubusercontent.com/57915629/83161824-edb92200-a0d6-11ea-8b5f-4a3e36198396.gif)
+![hb-giphy2](https://user-images.githubusercontent.com/57915629/83162724-23aad600-a0d8-11ea-9ec3-3e5ef96fe4ff.gif)
 <br>
 Enhanced web page responsiveness using CSS3 media queries to adjust element styling based on device-width. Thus, users can also view the site on mobile.
