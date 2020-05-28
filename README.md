@@ -1,8 +1,15 @@
-## Background and Overview
-<b>Hola Bear</b> is a data visualization webpage that explains the facts and myths about polar bears and the impact of global warming and climate change on their population.
+# README
+
+[**Project Live**](https://juneseong.github.io/hola-bear/)
+
+## Hola Bear
+Hola Bear is a data visualization webpage that showcases the correlation between polar bear population and climate change.
+
+## Technologies
+Hola Bear is built with `Vanilla JavaScript`, `HTML5`, `CSS3` and `D3.js`.
 
 ## Functionality
-Users can view data, facts and myths about polar bears
+Users can view data, facts and myths about polar bears.
 
 ## Timeline
 * Hosting on Heroku (4/27/2020)
@@ -12,11 +19,3 @@ Users can view data, facts and myths about polar bears
 * Add interactive elements using JavaScript (4/29/2020)
 * Complete styling the website (4/30/2020)
 * Production README (4/30/2020)
-
-## Technologies
-* HTML/CSS
-* JavaScript
-* D3.js
-
-## Wireframe
-![wireframe](https://user-images.githubusercontent.com/57915629/80400171-6b93ce80-8888-11ea-81cf-9fece3dfa36a.png)
