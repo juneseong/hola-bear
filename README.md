@@ -10,6 +10,11 @@ Hola Bear is mainly built with `Vanilla JavaScript`, `HTML5` and `CSS3`. `D3.js`
 
 
 ## Functionality
-Users can view data on trends in polar bear subpopulation and fun facts about polar bears.
+### 1. Data on Trends in Polar Bear Subpopulation
 ![hb-giphy](https://user-images.githubusercontent.com/57915629/83158220-826d5100-a0d2-11ea-9d64-a8b47e811c8d.gif)
-Users can view information by hovering their mouse over any of the pie in the chart.
+<br>
+Users can view data on trends in polar bear subpopulation by hovering their mouse over any of the pie in the chart.
+### 2. Responsive
+![hb-giphy2](https://user-images.githubusercontent.com/57915629/83160594-66b77a00-a0d5-11ea-9103-9a7bf7f31179.gif)
+<br>
+Users can also view the site on mobile or on smaller screens.
